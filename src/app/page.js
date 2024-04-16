@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
+import Card from "./Component/Card";
 
 export default function Home() {
   // const handleCalendyPopup = () => {};
@@ -42,40 +43,55 @@ export default function Home() {
             We Provide Our Best Services
           </h3>
           <div class="services__grid">
-            <div class="services__card">
-              <img src="./images/safety.png" class="services__cardimg" />
-              <h4 class="services__cardheading playfair">Safety</h4>
-              <p class="services__cardtext">
-                Our residents can live peacefully knowing they are safe within a
-                peaceful environment.
-              </p>
-            </div>
-            <div class="services__card">
-              <img src="./images/housekeeping.png" class="services__cardimg" />
-              <h4 class="services__cardheading playfair">Housekeeping</h4>
-              <p class="services__cardtext">
-                Enjoy a clean and tidy living space with our regular
-                housekeeping services
-              </p>
-            </div>
-            <div class="services__card">
-              <img src="./images/care.png" class="services__cardimg" />
-              <h4 class="services__cardheading playfair">Personal Care</h4>
-              <p class="services__cardtext">
-                We develop care plans tailored to the individual needs of each
-                resident.
-              </p>
-            </div>
-            <div class="services__card">
-              <img src="./images/medication.png" class="services__cardimg" />
-              <h4 class="services__cardheading playfair">
-                Medication Management
-              </h4>
-              <p class="services__cardtext">
-                We provide meticulous medication management which ensures
-                resident well-being through clear protocols.
-              </p>
-            </div>
+            <Card
+              imgpath={"./images/safety.png"}
+              title={"Safety"}
+              description={
+                "Our residents can live peacefully knowing they are safe within a peaceful environment."
+              }
+              link="/services/safety"
+            />
+            <Card
+              imgpath={"./images/housekeeping.png"}
+              title={
+                <span>
+                  House <br />
+                  keeping
+                </span>
+              }
+              description={
+                " Enjoy a clean and tidy living space with our regular housekeeping services"
+              }
+              link="/services/housekeeping"
+            />
+            <Card
+              imgpath={"./images/care.png"}
+              title={
+                <span>
+                  Personal
+                  <br />
+                  Care{" "}
+                </span>
+              }
+              description={
+                " We develop care plans tailored to the individual needs of each resident."
+              }
+              link="/services/personalcare"
+            />
+            <Card
+              imgpath={"./images/medication.png"}
+              title={
+                <span>
+                  Medication
+                  <br />
+                  Management{" "}
+                </span>
+              }
+              description={
+                "We make sure residents follow their prescribed medication schedule."
+              }
+              link="/services/medicationmanagement"
+            />
           </div>
         </section>
         {/* <!-- APPOINTMENT --> */}

@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer class="footer">
       <h2 class="footer__heading playfair">
-        Let’s talk about your specific needs.
+        Let’s talk about <br /> your specific needs.
       </h2>
       <button onClick={handleCalendyPopup} class="footer__btn">
         Schedule a Tour
