@@ -161,6 +161,7 @@ body {
   font-weight: 700;
   color: #fcfcfc;
   margin: auto;
+  text-decoration: none;
 }
 /* APPOINTMENT STYLES */
 .appointment {
@@ -495,3 +496,123 @@ body {
   text-align: left;
   margin-bottom: 50px;
 }
+@media (max-width: 1301px) {
+  .address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    padding: 0px;
+    color: #5d5d5d;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1141px) {
+  .contact {
+    gap: 50px;
+  }
+  .main {
+    margin: 0px 94px 0px 94px;
+  }
+  .contactmain {
+    padding: 131px 50px 103px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+    gap: 70px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1025px) {
+  .banner {
+    background-position: center;
+  }
+  .servicepage__imagebox {
+    background-position: center;
+  }
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header {
+    padding: 20px 100px;
+  }
+  .main {
+    margin: 0px 60px 0px 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    gap: 50px;
+    flex-direction: column;
+  }
+  .appointment {
+    flex-direction: column;
+  }
+
+  .contactmain {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 692px) {
+  .services__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    padding: 20px 20px;
+  }
+  .banner {
+    display: flex;
+    height: 100vh;
+    padding-top: 158px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .footer__list {
+    gap: 50px;
+  }
+  .footer {
+    padding: 82px 55px 48px;
+  }
+  .aboutmain {
+    padding: 131px 30px 103px;
+  }
+  .address {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    gap: 10px;
+    padding: 0px 0px;
+  }
+  .servicepage__infosection {
+    padding: 64px 70px;
+  }
+}
+@media (max-width: 590px) {
+  .header__nav {
+    display: none;
+  }
+  .contact__image {
+    width: 100%;
+  }
+  .appointment__image {
+    width: 100%;
+  }
+  .contactmain {
+    padding: 131px 30px 103px;
+  }
+}
+@media (max-width: 439px) {
+  .main {
+    margin: 0px 30px 0px 30px;
+  }
+  .form__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .servicepage__infosection {
+    padding: 64px 30px;
+  }
+}
+/* 1013 */

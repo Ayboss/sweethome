@@ -134,14 +134,14 @@ const datas = {
 function page() {
   const pathname = useParams();
   const service = pathname.service;
-  // if (
-  //   service != "safety" ||
-  //   service != "housekeeping" ||
-  //   service != "personalcare" ||
-  //   service != "medicationmanagement"
-  // ) {
-  //   return <p>404 not found </p>;
-  // }
+  if (
+    service != "safety" &&
+    service != "housekeeping" &&
+    service != "personalcare" &&
+    service != "medicationmanagement"
+  ) {
+    return <p>404 not found </p>;
+  }
   return (
     <>
       <Header />
