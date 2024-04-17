@@ -71,9 +71,7 @@ const html = `
     </style>
 </head>
 <body>
-<h1>Prosthetic Information</h1>
 <ul class="list">
-    <h2 class="heading">PERSONAL INFORMATION</h2>
     <li class="item">
         <span class="title">Name:</span> 
         <span class="value">{{lastname}} {{firstname}}</span>

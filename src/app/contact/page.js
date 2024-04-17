@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
+import axios from "axios";
 
 function page() {
   const [firstname, setfirstname] = useState("");
@@ -9,7 +10,9 @@ function page() {
   const [phonenumber, setphonenumber] = useState("");
   const [email, setemail] = useState("");
   const [comments, setcomments] = useState("");
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // console.log(firstname, lastname, phonenumber, email, comments);
     const endpoint = "/api/form";
     const body = new FormData();
     body.append("firstname", firstname);
@@ -19,7 +22,9 @@ function page() {
     body.append("comments", comments);
     try {
       await axios.post(endpoint, body);
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
   };
   return (
     <div>
@@ -30,7 +35,7 @@ function page() {
       </section>
       {/* <!-- MAIN --> */}
       <main class="contactmain">
-        <form action="" class="form">
+        <form class="form">
           <div class="form__group">
             <label class="form__label">Your Name</label>
             <div class="form__flex">
@@ -38,11 +43,13 @@ function page() {
                 class="form__input"
                 value={firstname}
                 onChange={(e) => setfirstname(e.target.value)}
+                placeholder="First Name"
               />
               <input
                 class="form__input"
                 value={lastname}
                 onChange={(e) => setlastname(e.target.value)}
+                placeholder="Last Name"
               />
             </div>
           </div>
@@ -53,6 +60,7 @@ function page() {
               class="form__input"
               value={phonenumber}
               onChange={(e) => setphonenumber(e.target.value)}
+              placeholder="Enter Number"
             />
           </div>
           <div class="form__group">
@@ -62,6 +70,7 @@ function page() {
               class="form__input"
               value={email}
               onChange={(e) => setemail(e.target.value)}
+              placeholder="Enter Email"
             />
           </div>
           <div class="form__group">
@@ -72,7 +81,9 @@ function page() {
               onChange={(e) => setcomments(e.target.value)}
             ></textarea>
           </div>
-          <button class="form__btn">Send Message</button>
+          <button onClick={handleSubmit} class="form__btn">
+            Send Message
+          </button>
         </form>
         <div class="address">
           <p class="address__title">Address:</p>

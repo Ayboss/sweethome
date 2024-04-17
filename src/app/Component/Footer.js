@@ -40,17 +40,12 @@ function Footer() {
           </Link>
         </li>
       </ul>
-      <ul class="footer__sociallist">
-        <li class="footer__socialitem">
+      <div class="footer__sociallist">
+        <p>Stay Connected</p>
+        <div class="footer__socialitem">
           <img src="./images/fb.svg" class="footer__socialimg" />
-        </li>
-        <li class="footer__socialitem">
-          <img src="./images/twitter.svg" class="footer__socialimg" />
-        </li>
-        <li class="footer__socialitem">
-          <img src="./images/instagram.svg" class="footer__socialimg" />
-        </li>
-      </ul>
+        </div>
+      </div>
     </footer>
   );
 }

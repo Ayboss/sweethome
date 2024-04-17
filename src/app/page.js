@@ -4,6 +4,8 @@ import Link from "next/link";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
 import Card from "./Component/Card";
+import smalldashboardimg from "../../public/images/smalldashboardimg.png";
+import Image from "next/image";
 
 export default function Home() {
   // const handleCalendyPopup = () => {};
@@ -33,6 +35,25 @@ export default function Home() {
         </div>
         {/* <!-- IMAGE --> */}
         {/* <!-- <img src="" class="banner__image" /> --> */}
+      </section>
+      <section className="bannersmall">
+        <p className="bannersmall__head playfair">Sweet Home Assisted Living</p>
+        <Image className="bannersmall__img" src={smalldashboardimg} alt="" />
+        <div className="bannersmall__content">
+          <div className="bannersmall__innercontent">
+            <h3 className="bannersmall__text playfair">
+              Sweet Home Assisted Living
+            </h3>
+            <p className="bannersmall__red">...your care is our priority</p>
+            <p className="bannersmall__texttwo">
+              A home that cherishes individuality and ensures a life of dignity,
+              joy and relaxation for our residents.
+            </p>
+          </div>
+          <button onClick={handleCalendyPopup} class="bannersmall__btn ">
+            Schedule a Tour
+          </button>
+        </div>
       </section>
       {/* <!-- MAIN SECTION --> */}
       <main class="main">
@@ -98,7 +119,7 @@ export default function Home() {
         <section class="appointment">
           <img src="./images/nurse.png" class="appointment__image" />
           <div class="appointment__info">
-            <h2 class="appointment__heading">
+            <h2 class="appointment__heading playfair">
               Make An Appointment With Us Today
             </h2>
             <p class="appointment__text">

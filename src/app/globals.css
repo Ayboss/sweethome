@@ -19,15 +19,50 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+.hamburger {
+  display: none;
+}
 
+.mobilenav {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.mobilenav__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 70px;
+}
+.mobilenav__item {
+}
+.mobilenav__link {
+  text-decoration: none;
+  color: #1f272de5;
+  font-size: 25px;
+}
+.close {
+  display: block;
+  position: absolute;
+  right: 21px;
+  top: 40px;
+  cursor: pointer;
+}
 .header {
-  padding: 20px 144px;
+  padding: 5px 144px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header__logo {
-  font-size: 32px;
 }
 .header__list {
   list-style: none;
@@ -43,21 +78,85 @@ body {
   text-decoration: none;
   color: #1f272de5;
 }
-
-/* BANNER STYLES */
-.banner {
+.header__connect {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-right: 13px;
+  margin-bottom: 16px;
+}
+.header__connect {
+  font-weight: bold;
+}
+/* BANNER STYLES */
+.bannersmall {
+  display: none;
+}
+.bannersmall__head {
+  font-weight: 700;
+  line-height: 31.99px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.bannersmall__img {
+  width: 100%;
+  height: auto;
+}
+.bannersmall__content {
+  padding: 24px 22px;
+}
+.bannersmall__innercontent {
+  max-width: 248px;
+  /* width: 100%; */
+  margin: auto;
+}
+.bannersmall__text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42.66px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+.bannersmall__red {
+  text-align: center;
+  color: #ff4343;
+  text-align: center;
+  /* font-style: italic; */
+  margin-bottom: 27px;
+}
+.bannersmall__texttwo {
+  color: #5d5d5d;
+  line-height: 20px;
+  margin-bottom: 27px;
+  text-align: center;
+}
+.bannersmall__btn {
+  /* margin: 0px 22px 3px; */
+  padding: 18px 44px;
+  border: none;
+  background-color: #a574eb;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fcfcfc;
+}
+.banner {
   height: 100vh;
-  justify-content: space-between;
-  padding-top: 158px;
-  padding-left: 143px;
-  padding-right: 143px;
-  background-color: #fcf5ff;
   background-image: url(../../public/images/dashboardimg.png);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .banner__text {
   max-width: 386px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 57px 148px 98px 117px;
+  box-sizing: content-box;
+  border-radius: 0px 200px 200px 0px;
 }
 .banner__heading {
   font-size: 50px;
@@ -279,8 +378,13 @@ body {
 .footer__sociallist {
   display: flex;
   justify-content: center;
-  gap: 13px;
-  list-style: none;
+  gap: 12px;
+  align-items: center;
+}
+.footer__sociallist p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 .footer__socialitem {
   width: 40px;
@@ -535,7 +639,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
   .header {
-    padding: 20px 100px;
+    padding: 5px 100px;
   }
   .main {
     margin: 0px 60px 0px 60px;
@@ -545,7 +649,7 @@ body {
 @media (max-width: 900px) {
   .contact {
     gap: 50px;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .appointment {
     flex-direction: column;
@@ -560,14 +664,10 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
   .header {
-    padding: 20px 20px;
+    padding: 5px 20px;
   }
-  .banner {
-    display: flex;
-    height: 100vh;
-    padding-top: 158px;
-    padding-left: 40px;
-    padding-right: 40px;
+  .banner__text {
+    padding: 40px 108px 78px 80px;
   }
   .footer__list {
     gap: 50px;
@@ -589,6 +689,19 @@ body {
   }
 }
 @media (max-width: 590px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 21px;
+    top: 40px;
+    cursor: pointer;
+  }
+  .bannersmall {
+    display: block;
+  }
+  .banner {
+    display: none;
+  }
   .header__nav {
     display: none;
   }
@@ -601,18 +714,105 @@ body {
   .contactmain {
     padding: 131px 30px 103px;
   }
+  .header__logo {
+    width: 40px;
+    height: 45px;
+  }
+  .header {
+    padding: 40px 0px;
+    justify-content: center;
+  }
 }
 @media (max-width: 439px) {
-  .main {
-    margin: 0px 30px 0px 30px;
-  }
   .form__flex {
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
+  .services {
+    padding: 59px 21px;
+  }
   .servicepage__infosection {
     padding: 64px 30px;
+  }
+  .services__heading {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .services__subheading {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .services__card {
+    background-color: white;
+  }
+  .services__cardheading {
+    margin-bottom: 0px;
+  }
+  .appointment {
+    padding-top: 0px;
+  }
+  .appointment__heading {
+    font-size: 32px;
+  }
+  .appointment__info {
+    text-align: center;
+    padding: 0px 51px;
+  }
+  .appointment__btn {
+    /* width: 100%; */
+    align-self: center;
+    display: unset;
+  }
+  .contact {
+    padding-top: 0px;
+    flex-direction: column-reverse;
+  }
+  .contact__heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .contact__text {
+    text-align: center;
+    padding: 0px 51px;
+  }
+  .contact__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main {
+    margin: 0px;
+  }
+  .footer {
+    padding: 82px 30px 48px;
+  }
+  .footer__heading {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .footer__list {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer__hr {
+    margin-bottom: 48px;
+  }
+  .aboutbanner__title,
+  .contactbanner__title {
+    font-size: 32px;
+  }
+  .aboutmain,
+  .contactmain {
+    padding: 48px 20px;
+  }
+  .sweethome {
+    font-size: 16px;
+  }
+  .personalized {
+    font-size: 16px;
+  }
+  .form__btn {
+    width: 100%;
   }
 }
 /* 1013 */
