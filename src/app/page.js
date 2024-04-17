@@ -142,7 +142,9 @@ export default function Home() {
               Let us help you embark on this next chapter of your life with
               confidence and ease.
             </p>
-            <button class="contact__btn">Contact Us</button>
+            <Link href={"contact"} class="contact__btn">
+              Contact Us
+            </Link>
           </div>
           <img src="./images/contact.png" class="contact__image" />
         </section>

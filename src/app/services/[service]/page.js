@@ -156,7 +156,9 @@ function page() {
           </h2>
         </section>
         <section className="servicepage__infosection">
-          <h4 className="servicepage__infohead">{datas[service]?.heading}</h4>
+          <h4 className="servicepage__infohead playfair">
+            {datas[service]?.heading}
+          </h4>
           {datas[service]?.body}
         </section>
       </main>
