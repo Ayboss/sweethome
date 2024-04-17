@@ -535,9 +535,6 @@ body {
 .personalized__bottom {
 }
 .address {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
   padding: 0px 48px;
   color: #5d5d5d;
   font-size: 20px;
@@ -608,10 +605,6 @@ body {
 }
 @media (max-width: 1301px) {
   .address {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    gap: 20px;
     padding: 0px;
     color: #5d5d5d;
     font-size: 20px;
@@ -685,9 +678,6 @@ body {
     padding: 131px 30px 103px;
   }
   .address {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    gap: 10px;
     padding: 0px 0px;
   }
   .servicepage__infosection {
