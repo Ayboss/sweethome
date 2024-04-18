@@ -405,7 +405,7 @@ body {
 
 /* SPECIAL CLASS */
 .playfair {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-playfair);
 }
 
 /* CONTACT PAGES */
