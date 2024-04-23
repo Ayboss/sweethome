@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import Header from "./Component/Header";
-import Footer from "./Component/Footer";
-import Card from "./Component/Card";
+import Header from "../Component/Header";
+import Footer from "../Component/Footer";
+import Card from "../Component/Card";
 import smalldashboardimg from "../../public/images/smalldashboardimg.png";
 import Image from "next/image";
+import CardSection from "@/Component/CardSection";
 
 export default function Home() {
   // const handleCalendyPopup = () => {};
@@ -22,7 +23,8 @@ export default function Home() {
       {/* <!-- BANNER --> */}
       <section class="banner">
         <div class="banner__text">
-          <h1 class="banner__heading playfair">Sweet Home Assisted Living</h1>
+          <h2 className="banner__subheading playfair">Sweet Home </h2>
+          <h1 class="banner__heading playfair">Assisted Living</h1>
           <p class="banner__red">...your care is our priority</p>
           <p class="banner__subtext">
             A home that cherishes individuality and ensures a life of dignity,
@@ -37,7 +39,7 @@ export default function Home() {
         {/* <!-- <img src="" class="banner__image" /> --> */}
       </section>
       <section className="bannersmall">
-        <p className="bannersmall__head playfair">Sweet Home Assisted Living</p>
+        {/* <p className="bannersmall__head playfair">Sweet Home Assisted Living</p> */}
         <Image className="bannersmall__img" src={smalldashboardimg} alt="" />
         <div className="bannersmall__content">
           <div className="bannersmall__innercontent">
@@ -59,61 +61,11 @@ export default function Home() {
       <main class="main">
         {/* <!-- SERVICES --> */}
         <section class="services">
-          <h2 class="services__heading playfair">Services</h2>
+          {/* <h2 class="services__heading playfair">Services</h2> */}
           <h3 class="services__subheading playfair">
             We Provide Our Best Services
           </h3>
-          <div class="services__grid">
-            <Card
-              imgpath={"./images/safety.png"}
-              title={"Safety"}
-              description={
-                "Our residents can live peacefully knowing they are safe within a peaceful environment."
-              }
-              link="/services/safety"
-            />
-            <Card
-              imgpath={"./images/housekeeping.png"}
-              title={
-                <span>
-                  House <br />
-                  keeping
-                </span>
-              }
-              description={
-                " Enjoy a clean and tidy living space with our regular housekeeping services"
-              }
-              link="/services/housekeeping"
-            />
-            <Card
-              imgpath={"./images/care.png"}
-              title={
-                <span>
-                  Personal
-                  <br />
-                  Care{" "}
-                </span>
-              }
-              description={
-                " We develop care plans tailored to the individual needs of each resident."
-              }
-              link="/services/personalcare"
-            />
-            <Card
-              imgpath={"./images/medication.png"}
-              title={
-                <span>
-                  Medication
-                  <br />
-                  Management{" "}
-                </span>
-              }
-              description={
-                "We make sure residents follow their prescribed medication schedule."
-              }
-              link="/services/medicationmanagement"
-            />
-          </div>
+          <CardSection />
         </section>
         {/* <!-- APPOINTMENT --> */}
         <section class="appointment">

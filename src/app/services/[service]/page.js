@@ -1,6 +1,6 @@
 "use client";
-import Footer from "../../Component/Footer";
-import Header from "../../Component/Header";
+import Footer from "../../../Component/Footer";
+import Header from "../../../Component/Header";
 import { useParams } from "next/navigation";
 // import Header from "@/app/Component/Header";
 // import Footer from "@/app/Component/Footer";

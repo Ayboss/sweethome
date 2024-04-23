@@ -1,14 +1,17 @@
 import React from "react";
-import Header from "../Component/Header";
-import Footer from "../Component/Footer";
+import Header from "../../Component/Header";
+import Footer from "../../Component/Footer";
 
 function page() {
   return (
     <div>
       <Header />
       {/* <!-- BANNER --> */}
-      <section class="aboutbanner">
-        <h1 class="aboutbanner__title playfair">About Us</h1>
+      <section
+        style={{ backgroundImage: `url(/images/aboutpage.png)` }}
+        className="servicepage__imagebox"
+      >
+        <h2 className="servicepage__imagetext playfair">About Us</h2>
       </section>
       {/* <!-- MAIN --> */}
       <main class="aboutmain">

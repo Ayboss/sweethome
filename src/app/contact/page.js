@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import SnackbarProvider from "react-simple-snackbar";
-import Header from "../Component/Header";
-import Footer from "../Component/Footer";
-import Form from "../Component/Form";
+import Header from "../../Component/Header";
+import Footer from "../../Component/Footer";
+import Form from "../../Component/Form";
 
 function page() {
   return (
@@ -11,8 +11,14 @@ function page() {
       <div>
         <Header />
         {/* <!-- BANNER --> */}
-        <section class="contactbanner">
+        {/* <section class="contactbanner">
           <h1 class="contactbanner__title">Contact US</h1>
+        </section> */}
+        <section
+          style={{ backgroundImage: `url(/images/contactpage.png)` }}
+          className="servicepage__imagebox"
+        >
+          <h2 className="servicepage__imagetext playfair">Contact Us</h2>
         </section>
         {/* <!-- MAIN --> */}
         <main class="contactmain">

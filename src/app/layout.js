@@ -1,7 +1,10 @@
-import { Inter, Playfair } from "next/font/google";
+import { Roboto, Playfair } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
 const playfair = Playfair({ variable: "--font-playfair", subsets: ["latin"] });
 
 export const metadata = {
