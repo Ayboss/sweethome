@@ -13,7 +13,7 @@ function CardSection() {
           observer.disconnect();
         }
       },
-      { rootMargin: "-300px" }
+      { rootMargin: "-100px" }
     );
     observer.observe(ref.current);
     return () => observer.disconnect();

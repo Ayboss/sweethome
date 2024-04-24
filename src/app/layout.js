@@ -30,14 +30,6 @@ export default function RootLayout({ children }) {
         ></script>
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <title>Sweet Home</title>
-        <style>
-          {`
-   
-          html{
-            font-family: ${roboto.style.fontFamily}
-          }
-          `}
-        </style>
       </head>
       <body className={roboto.className + " " + playfair.variable}>
         {children}
