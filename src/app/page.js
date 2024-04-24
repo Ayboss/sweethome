@@ -18,7 +18,7 @@ export default function Home() {
     return false;
   };
   return (
-    <body>
+    <main>
       <Header />
       {/* <!-- BANNER --> */}
       <section class="banner">
@@ -104,6 +104,6 @@ export default function Home() {
       {/* <!-- FOOTER --> */}
       <Footer />
       <script src=""></script>
-    </body>
+    </main>
   );
 }

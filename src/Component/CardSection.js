@@ -1,13 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Card from "./Card";
 
 function CardSection() {
-  const [isIntersecting, setIsIntersecting] = useState();
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  console.log(isIntersecting);
+  const ref = useRef(null);
   useEffect(() => {
-    const observer = new IntersectionObserver(() => {});
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting == true) {
+          setIsIntersecting(entry.isIntersecting);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-300px" }
+    );
+    observer.observe(ref.current);
+    return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    let delay = 0;
+    if (isIntersecting) {
+      const els = Array.from(ref.current.children);
+      els?.forEach((el) => {
+        el.classList.add("slide-in");
+        el.style.transitionDelay = delay + "s";
+        delay = delay + 0.3;
+      });
+    }
+  }, [isIntersecting]);
+
   return (
-    <div class="services__grid">
+    <div class="services__grid" ref={ref}>
       <Card
         imgpath={"./images/safety.png"}
         title={"Safety"}

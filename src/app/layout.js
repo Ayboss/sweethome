@@ -1,7 +1,7 @@
 import { Roboto, Playfair } from "next/font/google";
 import "./globals.css";
 
-const inter = Roboto({
+const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
 });
@@ -30,8 +30,16 @@ export default function RootLayout({ children }) {
         ></script>
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <title>Sweet Home</title>
+        <style>
+          {`
+   
+          html{
+            font-family: ${roboto.style.fontFamily}
+          }
+          `}
+        </style>
       </head>
-      <body className={inter.className + " " + playfair.variable}>
+      <body className={roboto.className + " " + playfair.variable}>
         {children}
       </body>
     </html>
