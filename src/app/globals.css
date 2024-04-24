@@ -184,9 +184,13 @@ body {
 .bannersmall__text {
   font-size: 32px;
   font-weight: 700;
-  line-height: 42.66px;
+  /* line-height: 42.66px; */
   text-align: center;
+  margin-bottom: 10px;
   /* margin-bottom: 27px; */
+}
+.bannersmall__text span {
+  font-size: 24px;
 }
 .bannersmall__red {
   text-align: center;
@@ -232,6 +236,7 @@ body {
 }
 .banner__subheading {
   font-size: 32px;
+  line-height: 30px;
 }
 .banner__heading {
   font-size: 50px;

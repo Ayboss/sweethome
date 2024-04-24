@@ -44,7 +44,8 @@ export default function Home() {
         <div className="bannersmall__content">
           <div className="bannersmall__innercontent">
             <h3 className="bannersmall__text playfair">
-              Sweet Home Assisted Living
+              <span>Sweet Home</span> <br />
+              Assisted Living
             </h3>
             <p className="bannersmall__red">...your care is our priority</p>
             <p className="bannersmall__texttwo">

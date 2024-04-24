@@ -84,7 +84,7 @@ function Header() {
             href={"https://www.instagram.com/shaliving1/"}
             className="header__socialitem"
           >
-            <Instagram stroke="#7b57b0" />
+            <Instagram stroke="#8e5fd38a" />
           </Link>
         </div>
       </div>
