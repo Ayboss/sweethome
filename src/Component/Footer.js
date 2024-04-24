@@ -32,27 +32,30 @@ function Footer() {
           <h3 className="footer__heading playfair">Quick Links</h3>
           <ul className="footer__list">
             <li className="footer__item">
-              <Link href={"#"} className="footer__link">
+              <Link href={"/"} className="footer__link">
                 Home
               </Link>
             </li>
             <li className="footer__item">
-              <Link href={"#"} className="footer__link">
+              <Link href={"/about"} className="footer__link">
                 About Us
               </Link>
             </li>
             <li className="footer__item">
-              <Link href={"#"} className="footer__link">
+              <Link
+                href="https://twitter.com/shaliving1/media"
+                className="footer__link"
+              >
                 Photo Gallery
               </Link>
             </li>
             <li className="footer__item">
-              <Link href={"#"} className="footer__link">
+              <Link href="/services/safety" className="footer__link">
                 Services
               </Link>
             </li>
             <li className="footer__item">
-              <Link href={"#"} className="footer__link">
+              <Link href={"/contact"} className="footer__link">
                 Contact Us
               </Link>
             </li>

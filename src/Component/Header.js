@@ -36,7 +36,7 @@ function Header() {
               </Link>
             </li>
             <li className="mobilenav__item">
-              <Link class="mobilenav__link" href="about">
+              <Link class="mobilenav__link" href="/about">
                 About Us
               </Link>
             </li>
@@ -49,12 +49,12 @@ function Header() {
               </Link>
             </li>
             <li className="mobilenav__item">
-              <Link class="mobilenav__link" href="services/safety">
+              <Link class="mobilenav__link" href="/services/safety">
                 Services
               </Link>
             </li>
             <li className="mobilenav__item">
-              <Link class="mobilenav__link" href="contact">
+              <Link class="mobilenav__link" href="/contact">
                 Contact
               </Link>
             </li>
@@ -130,7 +130,7 @@ function Header() {
             </Link>
           </li>
           <li class="header__item">
-            <Link class="header__link" href="about">
+            <Link class="header__link" href="/about">
               About Us
             </Link>
           </li>
@@ -143,12 +143,12 @@ function Header() {
             </Link>
           </li>
           <li class="header__item">
-            <Link class="header__link" href="services/safety">
+            <Link class="header__link" href="/services/safety">
               Services
             </Link>
           </li>
           <li class="header__item">
-            <Link class="header__link" href="contact">
+            <Link class="header__link" href="/contact">
               Contact Us
             </Link>
           </li>
