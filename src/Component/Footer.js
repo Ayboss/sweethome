@@ -19,7 +19,8 @@ function Footer() {
       <div className="footer__flex">
         <div className="footer__first">
           <h2 class="footer__heading playfair">
-            SweetHome <br /> Assisted Living
+            <span>SweetHome</span>
+            <br /> Assisted Living
           </h2>
           <p className="footer__text">
             Our team here at SweetHome Assisted Living is here to support you in
