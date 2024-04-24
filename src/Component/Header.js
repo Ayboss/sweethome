@@ -41,6 +41,19 @@ function Header() {
               </Link>
             </li>
             <li className="mobilenav__item">
+              <Link
+                class="mobilenav__link"
+                href="https://twitter.com/shaliving1/media"
+              >
+                Photo Gallery
+              </Link>
+            </li>
+            <li className="mobilenav__item">
+              <Link class="mobilenav__link" href="services/safety">
+                Services
+              </Link>
+            </li>
+            <li className="mobilenav__item">
               <Link class="mobilenav__link" href="contact">
                 Contact
               </Link>
