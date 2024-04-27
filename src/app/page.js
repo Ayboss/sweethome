@@ -3,10 +3,8 @@
 import Link from "next/link";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
-import Card from "../Component/Card";
-import smalldashboardimg from "../../public/images/smalldashboardimg.png";
-import Image from "next/image";
 import CardSection from "@/Component/CardSection";
+import Banner from "@/Component/Banner";
 
 export default function Home() {
   // const handleCalendyPopup = () => {};
@@ -21,43 +19,8 @@ export default function Home() {
     <main>
       <Header />
       {/* <!-- BANNER --> */}
-      <section class="banner">
-        <div class="banner__text">
-          <h2 className="banner__subheading playfair">Sweet Home </h2>
-          <h1 class="banner__heading playfair">Assisted Living</h1>
-          <p class="banner__red">...your care is our priority</p>
-          <p class="banner__subtext">
-            A home that cherishes individuality and ensures a life of dignity,
-            joy and relaxation for our residents.
-          </p>
+      <Banner />
 
-          <button onClick={handleCalendyPopup} class="banner__btn">
-            Schedule a Tour
-          </button>
-        </div>
-        {/* <!-- IMAGE --> */}
-        {/* <!-- <img src="" class="banner__image" /> --> */}
-      </section>
-      <section className="bannersmall">
-        {/* <p className="bannersmall__head playfair">Sweet Home Assisted Living</p> */}
-        <Image className="bannersmall__img" src={smalldashboardimg} alt="" />
-        <div className="bannersmall__content">
-          <div className="bannersmall__innercontent">
-            <h3 className="bannersmall__text playfair">
-              <span>Sweet Home</span> <br />
-              Assisted Living
-            </h3>
-            <p className="bannersmall__red">...your care is our priority</p>
-            <p className="bannersmall__texttwo">
-              A home that cherishes individuality and ensures a life of dignity,
-              joy and relaxation for our residents.
-            </p>
-          </div>
-          <button onClick={handleCalendyPopup} class="bannersmall__btn ">
-            Schedule a Tour
-          </button>
-        </div>
-      </section>
       {/* <!-- MAIN SECTION --> */}
       <main class="main">
         {/* <!-- SERVICES --> */}

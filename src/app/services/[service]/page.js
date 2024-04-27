@@ -2,8 +2,6 @@
 import Footer from "../../../Component/Footer";
 import Header from "../../../Component/Header";
 import { useParams } from "next/navigation";
-// import Header from "@/app/Component/Header";
-// import Footer from "@/app/Component/Footer";
 import React from "react";
 
 const datas = {
@@ -150,15 +148,12 @@ function page() {
         <section
           style={{ backgroundImage: `url(${datas[service]?.img})` }}
           className="servicepage__imagebox"
-        >
+        ></section>
+        <section className="servicepage__infosection">
           <h2 className="servicepage__imagetext playfair">
             {datas[service]?.title}
           </h2>
-        </section>
-        <section className="servicepage__infosection">
-          <h4 className="servicepage__infohead playfair">
-            {datas[service]?.heading}
-          </h4>
+          <h4 className="servicepage__infohead ">{datas[service]?.heading}</h4>
           {datas[service]?.body}
         </section>
       </main>
@@ -166,5 +161,4 @@ function page() {
     </>
   );
 }
-
 export default page;

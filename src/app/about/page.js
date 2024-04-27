@@ -10,9 +10,8 @@ function page() {
       <section
         style={{ backgroundImage: `url(/images/aboutpage.png)` }}
         className="servicepage__imagebox"
-      >
-        <h2 className="servicepage__imagetext playfair">About Us</h2>
-      </section>
+      ></section>
+      <h2 className="servicepage__imagetext playfair">About Us</h2>
       {/* <!-- MAIN --> */}
       <main class="aboutmain">
         <p class="sweethome">
@@ -24,16 +23,13 @@ function page() {
         </p>
         <div class="personalized">
           <p class="personalized__top">
-            We offer personalized assistance, supportive services and
-            compassionate care in a professionally managed, carefully designed,
-            retirement community setting. It’s the perfect alternative for
-            seniors who can no longer live on their own at home, yet don’t need
-            24-hour, complex medical supervision.
-          </p>
-          <p class="personalized__bottom">
-            Our approach to caregiving is rooted in empathy, respect, and
-            dignity. We believe in treating each resident as an individual with
-            their own unique needs, preferences, and interests. Our
+            We offer a range of services designed to cater to the unique needs
+            of every resident. From assistance with daily activities to
+            medication management, our team is here to support you in every way.
+            Our health and wellness programs are designed to keep you active and
+            engaged. Our approach to caregiving is rooted in empathy, respect,
+            and dignity. We believe in treating each resident as an individual
+            with their own unique needs, preferences, and interests. Our
             compassionate caregivers work closely with residents and their
             families to develop personalized care plans that promote
             independence, comfort, and quality of life.

@@ -17,19 +17,18 @@ function page() {
         <section
           style={{ backgroundImage: `url(/images/contactpage.png)` }}
           className="servicepage__imagebox"
-        >
-          <h2 className="servicepage__imagetext playfair">Contact Us</h2>
-        </section>
+        ></section>
+        <h2 className="servicepage__imagetext playfair">Contact Us</h2>
         {/* <!-- MAIN --> */}
         <main class="contactmain">
           <Form />
-          <div class="address">
-            <p class="address__title">Address:</p>
-            <p class="address__value">
+          <div class="addresscontact">
+            <p class="addresscontact__title">Address:</p>
+            <p class="addresscontact__value">
               752 E. Megan Street, <br />
               Chandler AZ 85225
             </p>
-            <p class="address__time">Mon-Fri 9:00AM - 5:00PM</p>
+            <p class="addresscontact__time">Mon-Fri 9:00AM - 5:00PM</p>
             <p class="phone">Phone</p>
             <p class="phone__val">123-456-7890</p>
             <p class="email">Email:</p>

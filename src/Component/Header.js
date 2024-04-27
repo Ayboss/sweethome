@@ -13,7 +13,7 @@ function Header() {
   const [open, setopen] = useState(false);
   return (
     <header class="header">
-      <Image class="header__logo" alt="logo" src={logo} />
+      {/* <Image class="header__logo" alt="logo" src={logo} /> */}
       {/* HAMBURGER */}
       <Image
         className="hamburger"
@@ -89,10 +89,11 @@ function Header() {
         </div>
       </div>
       <div className="headerTop">
+        <Image class="header__logo" alt="logo" src={logo} />
         <div className="header__connected">
           <Image src={phone} className="header__phone" alt="phone " />
           <ul className="header__phonelist ">
-            <li className="header__reach">Reach out to us</li>
+            {/* <li className="header__reach">Reach out to us</li> */}
             <li className="header__phonenum">480-242-4551</li>
             <li className="header__faxdetails">
               <span className="fax">Fax:</span>

@@ -49,15 +49,16 @@ body {
   cursor: pointer;
 }
 .headerTop {
-  padding: 30px 73px 30px 0;
+  padding: 5px 73px 5px 133px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 .header__connected {
-  margin-left: 365px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 14px;
+  flex: 1;
 }
 .header__phone {
 }
@@ -70,14 +71,14 @@ body {
 }
 .header__phonenum {
   color: #4a129a;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 16px;
 }
 .header__faxdetails {
   color: #8e5fd3;
 }
 .header__faxdetails .fax {
-  font-size: 20px;
+  font-size: 16px;
 }
 .header__faxdetails .info {
   font-size: 16px;
@@ -92,12 +93,12 @@ body {
   justify-content: flex-end;
   background-color: #7b57b0;
   color: white;
-  padding: 22px 73px;
+  padding: 10px 73px;
 }
 .header__logo {
-  position: absolute;
-  top: 23px;
-  left: 144px;
+  /* position: absolute; */
+  /* top: 23px;
+  left: 144px; */
 }
 .header__list {
   list-style: none;
@@ -108,8 +109,8 @@ body {
 }
 .header__link {
   display: block;
-  padding: 16px 20px;
-  font-size: 20px;
+  padding: 0px 20px;
+  font-size: 16px;
   text-decoration: none;
   color: #ffffffe5;
 }
@@ -123,6 +124,7 @@ body {
 }
 .header__connect span {
   margin-right: 7px;
+  font-size: 20px;
 }
 .header__socialitem {
   width: 40px;
@@ -219,40 +221,39 @@ body {
   color: #fcfcfc;
 }
 .banner {
-  height: 100vh;
+  height: calc(100vh - 140px);
   background-image: url(../../public/images/dashboardimg.png);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 99px;
   background-position: top right;
 }
 .banner__text {
-  max-width: 347px;
+  max-width: 502px;
   background-color: rgba(255, 255, 255, 0.75);
-  padding: 57px 101px 98px 118px;
-  box-sizing: content-box;
-  border-radius: 0px 200px 200px 0px;
+  padding: 21px 72px 35px;
+  /* margin-top: 99px; */
+  box-sizing: border-box;
+  /* border-radius: 0px 200px 200px 0px; */
 }
 .banner__subheading {
   font-size: 32px;
-  line-height: 30px;
+  line-height: 25px;
+  font-weight: 600;
 }
 .banner__heading {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 600;
 
   color: #1f272d;
-  line-height: 66.65px;
 }
 .banner__red {
   color: #ff4343;
-  font-size: 26px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 11px;
   font-style: italic;
 }
 .banner__subtext {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 400;
   color: #1f272d;
@@ -278,7 +279,7 @@ body {
 
 /* SERVICES STYLES */
 .services {
-  padding: 59px 0px;
+  padding: 42px 0px 24px;
   margin: 0px 94px 0px 144px;
 }
 .services__heading {
@@ -290,9 +291,9 @@ body {
 }
 .services__subheading {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 66px;
+  margin-bottom: 39px;
   color: #9754cb;
 }
 .services__grid {
@@ -328,7 +329,7 @@ body {
 }
 .services__cardheading {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 37.32px;
   margin-bottom: 16px;
   text-align: center;
@@ -358,11 +359,12 @@ body {
 /* APPOINTMENT STYLES */
 .appointment {
   display: flex;
-  padding: 106px 94px 94px 144px;
+  padding: 74px 94px 74px 144px;
   display: flex;
   gap: 59px;
   align-items: center;
   background-color: #7b57b0;
+  justify-content: center;
 }
 .appointment__image {
   background-color: #fcf5ff;
@@ -373,7 +375,7 @@ body {
 .appointment__heading {
   font-size: 40px;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .appointment__text {
@@ -395,18 +397,19 @@ body {
 
 /* CONTACT STYLES */
 .contact {
-  padding: 143px 0px 123px;
+  padding: 54px 94px 39px 144px;
   display: flex;
   align-items: center;
-  gap: 117px;
-  margin: 0px 94px 0px 144px;
+  gap: 50px;
+
+  justify-content: center;
 }
 .contact__info {
   max-width: 403px;
 }
 .contact__heading {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .contact__text {
@@ -431,19 +434,20 @@ body {
 /* FOOTER */
 .footer {
   background-color: #7b57b0;
-  padding: 82px 74px 48px;
+  padding: 55px 74px 34px;
 }
 .footer__flex {
   display: flex;
   gap: 80px;
   margin: 0 70px;
+  justify-content: space-between;
 }
 .footer__flex > * {
-  flex: 1;
+  /* flex: 1; */
 }
 .footer__heading {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 39.39px;
   color: #ffffff;
   margin-bottom: 38px;
@@ -455,10 +459,12 @@ h3.footer__heading {
   font-size: 30px;
 }
 .footer__text {
-  font-size: 18px;
+  margin-top: 38px;
+  font-size: 20px;
   color: #fcfcfc;
   font-weight: 300;
   line-height: 28px;
+  max-width: 282px;
 }
 .footer__hr {
   margin-top: 88px;
@@ -467,12 +473,11 @@ h3.footer__heading {
 }
 .footer__list {
   list-style: none;
-  gap: 96px;
-
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
+
 .footer__item {
   font-size: 18px;
   font-weight: 300;
@@ -537,7 +542,7 @@ h3.footer__heading {
   font-size: 50px;
 }
 .contactmain {
-  padding: 131px 130px 103px;
+  padding: 0px 130px 42px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -585,7 +590,7 @@ h3.footer__heading {
   color: #fcfcfc;
 }
 .address {
-  font-size: 20px;
+  font-size: 18px;
 }
 .address__title {
   color: #1f272d;
@@ -627,22 +632,21 @@ h3.footer__heading {
   font-size: 50px;
 }
 .aboutmain {
-  padding: 131px 130px 103px;
+  padding: 0px 30px;
+  max-width: 1190px;
+  margin: 0px auto 31px;
 }
 .sweethome {
-  max-width: 811px;
-  margin: 0px auto 31px;
-  text-align: center;
   line-height: 25px;
   color: #5d5d5d;
-  font-size: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 .personalized {
-  text-align: center;
   color: #5d5d5d;
   line-height: 25px;
-  font-size: 20px;
-  margin-bottom: 70px;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 .personalized__top {
 }
@@ -651,18 +655,37 @@ h3.footer__heading {
 .address {
   padding: 0px 48px;
   color: #5d5d5d;
-  font-size: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 106px;
+}
+.addresscontact {
+  padding: 0px 48px;
+  color: #5d5d5d;
+  font-size: 18px;
 }
 .address__left {
+}
+.addresscontact__title {
+  margin-bottom: 8px;
+  color: #1f272d;
 }
 .address__title {
   margin-bottom: 8px;
   color: #1f272d;
 }
+.addresscontact__value {
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+.addresscontact__time {
+  margin-bottom: 19px;
+}
 .address__value {
 }
 .address__time {
-  margin-top: 20px;
+  margin-top: 52px;
 }
 .address__right {
 }
@@ -674,6 +697,7 @@ h3.footer__heading {
 .email {
   color: #1f272d;
   margin-top: 20px;
+  margin-bottom: ;
 }
 .email__val {
 }
@@ -686,57 +710,58 @@ h3.footer__heading {
   background-repeat: no-repeat;
 }
 .servicepage__imagetext {
-  background-color: rgba(0, 0, 0, 0.5);
   font-family: Playfair Display;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 53.32px;
+
   text-align: center;
-  color: white;
+  color: #a574eb;
   padding: 13px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 48px;
 }
 .servicepage__infosection {
-  padding: 64px 144px;
+  max-width: 1151px;
+  margin: auto;
+  padding: 0px 30px 40px;
 }
 .servicepage__infohead {
   text-align: center;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 27.6px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .servicepage__infotext {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.01em;
   text-align: left;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media (max-width: 1301px) {
   .address {
     padding: 0px;
     color: #5d5d5d;
-    font-size: 20px;
+    font-size: 18px;
+    gap: 50px;
   }
 }
-@media (max-width: 1141px) {
+@media (max-width: 1200px) {
   .contact {
     gap: 50px;
   }
-  .services,
-  .contact {
+  .services {
     margin: 0px 94px 0px 94px;
   }
-  .appointment {
+  .appointment,
+  .contact {
     padding: 106px 94px 94px 94px;
   }
   .contactmain {
-    padding: 131px 50px 103px;
+    padding: 0px 50px 103px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 70px;
@@ -747,14 +772,14 @@ h3.footer__heading {
     left: 60px;
   }
   .header__connected {
-    margin-left: 240px;
+    /* margin-left: 240px; */
   }
   .footer__flex {
     margin: 0 30px;
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1102px) {
   .banner {
     background-position: center;
   }
@@ -767,11 +792,17 @@ h3.footer__heading {
   .header {
     /* padding: 5px 100px; */
   }
-  .appointment {
+  .appointment,
+  .contact {
     padding: 106px 60px 94px 60px;
   }
-  .services,
-  .contact {
+  .appointment__image {
+    width: 500px;
+  }
+  .contact__image {
+    width: 500px;
+  }
+  .services {
     margin: 0px 60px 0px 60px;
   }
   .footer__flex {
@@ -814,6 +845,12 @@ h3.footer__heading {
   .header__mobile {
     display: flex;
   }
+  .appointment__image {
+    width: 100%;
+  }
+  .contact__image {
+    width: 100%;
+  }
   .footer__flex {
     flex-direction: column;
     gap: 50px;
@@ -821,6 +858,12 @@ h3.footer__heading {
   }
   .contact__info {
     text-align: center;
+  }
+  .header {
+    padding: 40px 0px;
+  }
+  .addresscontact {
+    padding: 0px 0px;
   }
 }
 @media (max-width: 692px) {
@@ -840,7 +883,7 @@ h3.footer__heading {
     padding: 82px 55px 48px;
   }
   .aboutmain {
-    padding: 131px 30px 103px;
+    /* padding: 131px 30px 103px; */
   }
   .address {
     padding: 0px 0px;
@@ -864,12 +907,16 @@ h3.footer__heading {
     width: 100%;
   }
   .contactmain {
-    padding: 131px 30px 103px;
+    padding: 0px 30px 103px;
   }
 
   .header {
     padding: 40px 0px;
     justify-content: center;
+  }
+  .address {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 @media (max-width: 439px) {
@@ -881,11 +928,11 @@ h3.footer__heading {
   .services {
     /* padding: 59px 21px; */
   }
-  .appointment {
+  .appointment,
+  .contact {
     padding: 106px 0px 94px 0px;
   }
-  .services,
-  .contact {
+  .services {
     margin: 0px 21px 0px 21px;
   }
   .servicepage__infosection {
@@ -902,7 +949,10 @@ h3.footer__heading {
   .services__card {
     /* background-color: white; */
   }
-
+  .contact__heading,
+  .appointment__heading {
+    font-size: 32px;
+  }
   .services__cardheading {
     margin-bottom: 0px;
   }
@@ -922,7 +972,6 @@ h3.footer__heading {
     display: unset;
   }
   .contact {
-    padding-top: 0px;
     flex-direction: column-reverse;
   }
   .contact__heading {
@@ -936,6 +985,12 @@ h3.footer__heading {
   .contact__btn {
     margin-left: auto;
     margin-right: auto;
+  }
+  .contact__info {
+    padding: 30px;
+  }
+  .contact__text {
+    padding: 0px;
   }
   .main {
     margin: 0px;
@@ -960,7 +1015,7 @@ h3.footer__heading {
   }
   .aboutmain,
   .contactmain {
-    padding: 48px 20px;
+    /* padding: 48px 20px; */
   }
   .sweethome {
     font-size: 16px;

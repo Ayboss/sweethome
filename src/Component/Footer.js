@@ -18,14 +18,10 @@ function Footer() {
     <footer class="footer">
       <div className="footer__flex">
         <div className="footer__first">
-          <h2 class="footer__heading playfair">
-            <span>SweetHome</span>
-            <br /> Assisted Living
-          </h2>
           <p className="footer__text">
-            Our team here at SweetHome Assisted Living is here to support you in
-            every way. Our health and wellness programs are designed to keep you
-            active and engaged
+            Our team here at <b> Sweet Home Assisted Living</b> is here to
+            support you in every way. Our health and wellness programs are
+            designed to keep you active and engaged
           </p>
         </div>
         <div className="footer__second">
@@ -94,10 +90,12 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <Image src={logo} alt="logo" className="footer__logo" />
       </div>
       <hr className="footer__hr" />
-      <p className="footer__copy">&#169;Copyright 2024</p>
+      <p className="footer__copy">
+        Copyright &#169; 2024 2024 Sweet Home Assisted Living, LLC. All rights
+        reserved
+      </p>
     </footer>
   );
 }

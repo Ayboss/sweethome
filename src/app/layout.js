@@ -1,11 +1,71 @@
-import { Roboto, Playfair } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+const helvetica = localFont({
+  src: [
+    {
+      path: "./../assets/helvetica/helvetica-light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./../assets/helvetica/Helvetica.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./../assets/helvetica/Helvetica-Oblique.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "./../assets/helvetica/Helvetica-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./../assets/helvetica/Helvetica-BoldOblique.ttf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
 });
-const playfair = Playfair({ variable: "--font-playfair", subsets: ["latin"] });
+
+const playfair = localFont({
+  src: [
+    {
+      path: "./../assets/playfair/PlayfairDisplay-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./../assets/playfair/PlayfairDisplay-Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "./../assets/playfair/PlayfairDisplay-Bold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./../assets/playfair/PlayfairDisplay-BoldItalic.ttf",
+      weight: "600",
+      style: "italic",
+    },
+    {
+      path: "./../assets/playfair/PlayfairDisplay-Black.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./../assets/playfair/PlayfairDisplay-BlackItalic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-playfair",
+});
 
 export const metadata = {
   title: "Sweethome",
@@ -31,7 +91,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <title>Sweet Home</title>
       </head>
-      <body className={roboto.className + " " + playfair.variable}>
+      <body className={helvetica.className + " " + playfair.variable}>
         {children}
       </body>
     </html>
