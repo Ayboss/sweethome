@@ -28,7 +28,7 @@ function page() {
               752 E. Megan Street, <br />
               Chandler AZ 85225
             </p>
-            <p class="addresscontact__time">Mon-Fri 9:00AM - 5:00PM</p>
+            <p class="addresscontact__time">Mon-Sun 9:00AM - 6:00PM</p>
             <p class="phone">Phone</p>
             <p class="phone__val">123-456-7890</p>
             <p class="email">Email:</p>

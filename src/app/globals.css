@@ -124,7 +124,8 @@ body {
 }
 .header__connect span {
   margin-right: 7px;
-  font-size: 20px;
+  font-size: 16px;
+  color: #4a129a;
 }
 .header__socialitem {
   width: 40px;
@@ -697,7 +698,7 @@ h3.footer__heading {
 .email {
   color: #1f272d;
   margin-top: 20px;
-  margin-bottom: ;
+  margin-bottom: 10px;
 }
 .email__val {
 }
@@ -713,12 +714,11 @@ h3.footer__heading {
   font-family: Playfair Display;
   font-size: 50px;
   font-weight: 700;
-
   text-align: center;
   color: #a574eb;
   padding: 13px;
   margin-top: 24px;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
 }
 .servicepage__infosection {
   max-width: 1151px;
@@ -732,6 +732,8 @@ h3.footer__heading {
   line-height: 27.6px;
   text-align: center;
   margin-bottom: 30px;
+  color: #2F253D;
+
 }
 .servicepage__infotext {
   font-size: 18px;
@@ -739,7 +741,8 @@ h3.footer__heading {
   line-height: 28px;
   letter-spacing: 0.01em;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  color: #5d5d5d;
 }
 @media (max-width: 1301px) {
   .address {
