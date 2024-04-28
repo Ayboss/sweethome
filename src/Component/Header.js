@@ -57,6 +57,7 @@ function Header() {
               <Link
                 class="mobilenav__link"
                 href="https://twitter.com/shaliving1/media"
+                target="_blank"
               >
                 Photo Gallery
               </Link>
