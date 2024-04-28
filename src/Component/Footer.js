@@ -71,18 +71,21 @@ function Footer() {
                 <Link
                   href={"https://www.facebook.com/ola.olami.39/"}
                   className="footer__socialitem"
+                  target="_blank"
                 >
                   <Facebook color="#7B57B0" />
                 </Link>
                 <Link
                   href={"https://twitter.com/shaliving1"}
                   className="footer__socialitem"
+                  target="_blank"
                 >
                   <Twitter color="#7B57B0" />
                 </Link>
                 <Link
                   href={"https://www.instagram.com/shaliving1/"}
                   className="footer__socialitem"
+                  target="_blank"
                 >
                   <Instagram color="#7B57B0" />
                 </Link>

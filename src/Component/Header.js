@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "./../../public/images/logo.svg";
 import hamburger from "./../../public/images/hamburger.svg";
 import close from "../../public/images/close.svg";
@@ -11,8 +11,20 @@ import Twitter from "@/assets/Twitter";
 import Instagram from "@/assets/Instagram";
 function Header() {
   const [open, setopen] = useState(false);
+  const [shouldfixed, setshouldfixed] = useState(false);
+
+  useEffect(() => {
+    const listener = window.addEventListener("scroll", () => {
+      if (window.scrollY > 790) {
+        setshouldfixed(true);
+      } else {
+        setshouldfixed(false);
+      }
+    });
+    return () => window.removeEventListener("scroll", listener);
+  }, []);
   return (
-    <header class="header">
+    <header class={`header  ${shouldfixed ? "shouldfix" : ""}`}>
       {/* <Image class="header__logo" alt="logo" src={logo} /> */}
       {/* HAMBURGER */}
       <Image
@@ -72,18 +84,21 @@ function Header() {
             <Link
               href={"https://www.facebook.com/ola.olami.39/"}
               className="header__socialitem"
+              target="_blank"
             >
               <Facebook />
             </Link>
             <Link
               href={"https://twitter.com/shaliving1"}
               className="header__socialitem"
+              target="_blank"
             >
               <Twitter />
             </Link>
             <Link
               href={"https://www.instagram.com/shaliving1/"}
               className="header__socialitem"
+              target="_blank"
             >
               <Instagram stroke="#8e5fd38a" />
             </Link>
@@ -108,18 +123,21 @@ function Header() {
           <Link
             href={"https://www.facebook.com/ola.olami.39/"}
             className="header__socialitem"
+            target="_blank"
           >
             <Facebook />
           </Link>
           <Link
             href={"https://twitter.com/shaliving1"}
             className="header__socialitem"
+            target="_blank"
           >
             <Twitter />
           </Link>
           <Link
             href={"https://www.instagram.com/shaliving1/"}
             className="header__socialitem"
+            target="_blank"
           >
             <Instagram stroke="#7b57b0" />
           </Link>
