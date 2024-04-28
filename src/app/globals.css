@@ -14,7 +14,9 @@ body {
 .hamburger {
   display: none;
 }
-
+.headermobile__logo {
+  display: none;
+}
 .mobilenav {
   width: 100%;
   height: 100vh;
@@ -127,6 +129,7 @@ body {
   font-size: 16px;
   color: #4a129a;
 }
+
 .header__socialitem {
   width: 40px;
   height: 40px;
@@ -135,6 +138,9 @@ body {
   background-color: #7b57b0;
   border-radius: 50%;
   cursor: pointer;
+}
+.header__mobile__socials .header__socialitem {
+  transform: scale(0.7);
 }
 .header__mobile {
   margin-top: 120px;
@@ -149,17 +155,24 @@ body {
 }
 .header__mobile__phonenumber {
   color: #9754cb;
+  font-size: 16px;
 }
 .header__mobile__connected {
-  font-size: 18px;
+  font-size: 16px;
+  color: #9754cb;
 }
 .header__mobile__socials {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0px;
 }
 .header__mobile__socials .header__socialitem {
   background-color: #8e5fd38a;
+}
+.header__mobile__connectedflex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 /* BANNER STYLES */
 .bannersmall {
@@ -732,8 +745,7 @@ h3.footer__heading {
   line-height: 27.6px;
   text-align: center;
   margin-bottom: 30px;
-  color: #2F253D;
-
+  color: #2f253d;
 }
 .servicepage__infotext {
   font-size: 18px;
@@ -832,6 +844,14 @@ h3.footer__heading {
     right: 21px;
     top: 60px;
     cursor: pointer;
+  }
+  .headermobile__logo {
+    display: block;
+    position: absolute;
+    left: 21px;
+    top: 60px;
+    width: 54px;
+    height: 61px;
   }
   .header__nav {
     display: none;

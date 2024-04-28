@@ -21,6 +21,7 @@ function Header() {
         alt="arm burger"
         src={hamburger}
       />
+      <Image class="headermobile__logo" alt="logo" src={logo} />
       {open && (
         <div className="mobilenav">
           <Image
@@ -63,29 +64,30 @@ function Header() {
       )}
       <div className="header__mobile">
         <p className="header__mobile__phone">
-          <span>Phone Number: </span>
           <span className="header__mobile__phonenumber">480-474-4824</span>
         </p>
-        <p className="header__mobile__connected">Stay Connected</p>
-        <div className="header__mobile__socials">
-          <Link
-            href={"https://www.facebook.com/ola.olami.39/"}
-            className="header__socialitem"
-          >
-            <Facebook />
-          </Link>
-          <Link
-            href={"https://twitter.com/shaliving1"}
-            className="header__socialitem"
-          >
-            <Twitter />
-          </Link>
-          <Link
-            href={"https://www.instagram.com/shaliving1/"}
-            className="header__socialitem"
-          >
-            <Instagram stroke="#8e5fd38a" />
-          </Link>
+        <div className="header__mobile__connectedflex">
+          <p className="header__mobile__connected">Stay Connected</p>
+          <div className="header__mobile__socials">
+            <Link
+              href={"https://www.facebook.com/ola.olami.39/"}
+              className="header__socialitem"
+            >
+              <Facebook />
+            </Link>
+            <Link
+              href={"https://twitter.com/shaliving1"}
+              className="header__socialitem"
+            >
+              <Twitter />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/shaliving1/"}
+              className="header__socialitem"
+            >
+              <Instagram stroke="#8e5fd38a" />
+            </Link>
+          </div>
         </div>
       </div>
       <div className="headerTop">
