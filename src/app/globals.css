@@ -292,6 +292,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #fcfcfc;
+  cursor: pointer;
 }
 .banner__image {
 }
@@ -417,6 +418,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #a574eb;
+  cursor: pointer;
 }
 
 /* CONTACT STYLES */
