@@ -39,13 +39,17 @@ function page() {
           <div class="address__left">
             <p class="address__title">Address</p>
             <p class="address__value">752 E. Megan Street, Chandler AZ 85225</p>
-            <p class="address__time">Mon-Fri 9:00AM - 5:00PM</p>
+            <p class="address__time">Mon-Sun 9:00AM - 6:00PM</p>
           </div>
           <div class="address__right">
             <p class="phone">Phone:</p>
-            <p class="phone__val">123-456-7890</p>
+            <p class="phone__val">M: 480-242-4551</p>
+            <p class="phone__val">H: 480-590-2595</p>
+
             <p class="email">Email:</p>
-            <p class="email__val">admin@sweethome.com</p>
+            <p class="email__val">admin@shassistedliving.com</p>
+            <p class="email__val">sweethomechandler@gmail.com</p>
+
           </div>
         </div>
       </main>

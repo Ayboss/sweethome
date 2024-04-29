@@ -109,13 +109,23 @@ function Header() {
       <div className="headerTop">
         <Image class="header__logo" alt="logo" src={logo} />
         <div className="header__connected">
-          <Image src={phone} className="header__phone" alt="phone " />
+          {/* <Image src={phone} className="header__phone" alt="phone " /> */}
           <ul className="header__phonelist ">
             {/* <li className="header__reach">Reach out to us</li> */}
-            <li className="header__phonenum">480-242-4551</li>
+            <li className="header__phonenum">M: 480-242-4551</li>
+            <li className="header__phonenum">H: 480-242-4551</li>
+
             <li className="header__faxdetails">
               <span className="fax">Fax:</span>
               <span className="info">480-474-4824</span>
+            </li>
+          </ul>
+          <div></div>
+          <ul className="header__phonelist ">
+            {/* <li className="header__reach">Reach out to us</li> */}
+            <li className="header__phonenum">admin@shassistedliving.com</li>
+            <li className="header__faxdetails">
+              <span className="info">sweethomechandler@gmail.com</span>
             </li>
           </ul>
         </div>

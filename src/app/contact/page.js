@@ -30,9 +30,11 @@ function page() {
             </p>
             <p class="addresscontact__time">Mon-Sun 9:00AM - 6:00PM</p>
             <p class="phone">Phone</p>
-            <p class="phone__val">123-456-7890</p>
+            <p class="phone__val">M: 480-242-4551</p>
+            <p class="phone__val">H: 480-590-2595</p>
             <p class="email">Email:</p>
-            <p class="email__val">admin@sweethome.com</p>
+            <p class="email__val">admin@shassistedliving.com</p>
+            <p class="email__val">sweethomechandler@gmail.com</p>
           </div>
         </main>
         <Footer />
