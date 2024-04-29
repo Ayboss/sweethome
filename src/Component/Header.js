@@ -56,7 +56,7 @@ function Header() {
             <li className="mobilenav__item">
               <Link
                 class="mobilenav__link"
-                href="https://twitter.com/shaliving1/media"
+                href={"/photogallery.pdf"}
                 target="_blank"
               >
                 Photo Gallery
@@ -77,8 +77,11 @@ function Header() {
       )}
       <div className="header__mobile">
         <p className="header__mobile__phone">
-          <span className="header__mobile__phonenumber">480-474-4824</span>
+          <span className="header__mobile__phonenumber">480-242-4551</span>
         </p>
+        <span className="header__mobile__phonenumber">
+          sweethomechandler@gmail.com
+        </span>
         <div className="header__mobile__connectedflex">
           <p className="header__mobile__connected">Stay Connected</p>
           <div className="header__mobile__socials">
@@ -110,7 +113,7 @@ function Header() {
         <Image class="header__logo" alt="logo" src={logo} />
         <div className="header__connected">
           {/* <Image src={phone} className="header__phone" alt="phone " /> */}
-          <ul className="header__phonelist ">
+          <ul className="header__phonelist verticalborder ">
             {/* <li className="header__reach">Reach out to us</li> */}
             <li className="header__phonenum">M: 480-242-4551</li>
             <li className="header__phonenum">H: 480-242-4551</li>
@@ -120,7 +123,7 @@ function Header() {
               <span className="info">480-474-4824</span>
             </li>
           </ul>
-          <div></div>
+
           <ul className="header__phonelist ">
             {/* <li className="header__reach">Reach out to us</li> */}
             <li className="header__phonenum">admin@shassistedliving.com</li>
@@ -169,7 +172,8 @@ function Header() {
           <li class="header__item">
             <Link
               class="header__link"
-              href="https://twitter.com/shaliving1/media"
+              href={"/photogallery.pdf"}
+              target="_blank"
             >
               Photo Gallery
             </Link>

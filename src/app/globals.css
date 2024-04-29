@@ -62,13 +62,17 @@ body {
 .header__connected {
   display: flex;
   align-items: center;
-  gap: 14px;
+
   flex: 1;
 }
 .header__phone {
 }
 .header__phonelist {
   list-style: none;
+  padding: 0px 10px;
+}
+.verticalborder {
+  border-right: 1px solid #7b57b0;
 }
 .header__reach {
   color: #8e5fd3;
@@ -164,12 +168,10 @@ body {
   font-size: 18px;
 }
 .header__mobile__phonenumber {
-  color: #9754cb;
   font-size: 16px;
 }
 .header__mobile__connected {
   font-size: 16px;
-  color: #9754cb;
 }
 .header__mobile__socials {
   display: flex;
@@ -293,6 +295,10 @@ body {
   font-weight: 700;
   color: #fcfcfc;
   cursor: pointer;
+  transition: 0.2s all ease;
+}
+.banner__btn:hover {
+  background-color: black;
 }
 .banner__image {
 }
@@ -380,6 +386,10 @@ body {
   color: #fcfcfc;
   margin: auto;
   text-decoration: none;
+  transition: 0.2s all ease;
+}
+.service__btn:hover {
+  background-color: black;
 }
 /* APPOINTMENT STYLES */
 .appointment {
@@ -419,8 +429,11 @@ body {
   font-weight: 700;
   color: #a574eb;
   cursor: pointer;
+  transition: 0.2s all ease;
 }
-
+.appointment__btn:hover {
+  background-color: #000;
+}
 /* CONTACT STYLES */
 .contact {
   padding: 54px 94px 39px 144px;
@@ -453,6 +466,10 @@ body {
   font-weight: 700;
   color: #fcfcfc;
   text-decoration: none;
+  transition: 0.2s all ease;
+}
+.contact__btn:hover {
+  background-color: black;
 }
 .contact__image {
 }
@@ -1013,6 +1030,7 @@ h3.footer__heading {
     align-self: center;
     display: unset;
   }
+
   .contact {
     flex-direction: column-reverse;
   }
