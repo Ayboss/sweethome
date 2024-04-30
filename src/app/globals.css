@@ -79,9 +79,10 @@ body {
   font-size: 20px;
 }
 .header__phonenum {
-  color: #000;
+  color: #000 !important;
   font-weight: 400;
   font-size: 16px;
+  text-decoration: none;
 }
 .header__faxdetails {
   color: #000;
