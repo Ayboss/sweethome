@@ -38,7 +38,7 @@ function page() {
         <div class="address">
           <div class="address__left">
             <p class="address__title">Address</p>
-            <p class="address__value">752 E. Megan Street, Chandler AZ 85225</p>
+            <p class="address__value">752 E. Megan Street,<br/> Chandler AZ 85225</p>
             <p class="address__time">Mon-Sun 9:00AM - 6:00PM</p>
           </div>
           <div class="address__right">

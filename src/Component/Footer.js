@@ -39,7 +39,8 @@ function Footer() {
             </li>
             <li className="footer__item">
               <Link
-                href="https://twitter.com/shaliving1/media"
+                href={"/photogallery.pdf"}
+                target="_blank"
                 className="footer__link"
               >
                 Photo Gallery
@@ -63,7 +64,7 @@ function Footer() {
             <div>
             <li className="footer__item">M: 480-242-4551</li>
             <li className="footer__item">H: 480-590-2595</li>
-            <li className="footer__item">Fax: 480-590-2595</li>
+            <li className="footer__item">Fax: 480-474-4824</li>
 
 
             </div>
