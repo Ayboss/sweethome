@@ -116,7 +116,7 @@ function Header() {
           <ul className="header__phonelist verticalborder ">
             {/* <li className="header__reach">Reach out to us</li> */}
             <li className="header__phonenum">M: 480-242-4551</li>
-            <li className="header__phonenum">H: 480-242-4551</li>
+            <li className="header__phonenum">H: 480-590-2595</li>
 
             <li className="header__faxdetails">
               <span className="fax">Fax: </span>
