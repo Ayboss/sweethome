@@ -60,8 +60,19 @@ function Footer() {
         <div>
           <h3 className="footer__heading playfair">Contact Info</h3>
           <ul className="footer__list">
-            <li className="footer__item">480-242-4551</li>
+            <div>
+            <li className="footer__item">M: 480-242-4551</li>
+            <li className="footer__item">H: 480-590-2595</li>
+            <li className="footer__item">Fax: 480-590-2595</li>
+
+
+            </div>
+            <div>
+
             <li className="footer__item">admin@shassistedliving.com</li>
+            <li className="footer__item">sweethomechandler@gmail.com</li>
+
+            </div>
             <li className="footer__item">
               752 E. Megan Street,
               <br /> Chandler AZ 85225

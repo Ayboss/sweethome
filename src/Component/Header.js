@@ -119,7 +119,7 @@ function Header() {
             <li className="header__phonenum">H: 480-242-4551</li>
 
             <li className="header__faxdetails">
-              <span className="fax">Fax:</span>
+              <span className="fax">Fax: </span>
               <span className="info">480-474-4824</span>
             </li>
           </ul>

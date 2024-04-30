@@ -45,6 +45,8 @@ function page() {
             <p class="phone">Phone:</p>
             <p class="phone__val">M: 480-242-4551</p>
             <p class="phone__val">H: 480-590-2595</p>
+            <p class="phone__val">Fax: 480-474-4824</p>
+
 
             <p class="email">Email:</p>
             <p class="email__val">admin@shassistedliving.com</p>
