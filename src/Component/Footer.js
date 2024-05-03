@@ -18,6 +18,8 @@ function Footer() {
     <footer class="footer">
       <div className="footer__flex">
         <div className="footer__first">
+        <h3 className="footer__heading playfair">New management, New look,<br /> Better Services</h3>
+
           <p className="footer__text">
             Our team here at <b> Sweet Home Assisted Living</b> is here to
             support you in every way. Our health and wellness programs are
@@ -62,11 +64,9 @@ function Footer() {
           <h3 className="footer__heading playfair">Contact Info</h3>
           <ul className="footer__list">
             <div>
-            <li className="footer__item">M: 480-242-4551</li>
-            <li className="footer__item">H: 480-590-2595</li>
+            <li className="footer__item">Mobile: 480-242-4551</li>
+            <li className="footer__item">Home: 480-590-2595</li>
             <li className="footer__item">Fax: 480-474-4824</li>
-
-
             </div>
             <div>
 
@@ -108,7 +108,7 @@ function Footer() {
       </div>
       <hr className="footer__hr" />
       <p className="footer__copy">
-        Copyright &#169; 2024 2024 Sweet Home Assisted Living, LLC. All rights
+        Copyright &#169; 2024 Sweet Home Assisted Living, LLC. All rights
         reserved
       </p>
     </footer>

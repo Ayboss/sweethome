@@ -115,8 +115,8 @@ function Header() {
           {/* <Image src={phone} className="header__phone" alt="phone " /> */}
           <ul className="header__phonelist verticalborder ">
             {/* <li className="header__reach">Reach out to us</li> */}
-            <li className="header__phonenum">M: 480-242-4551</li>
-            <li className="header__phonenum">H: 480-590-2595</li>
+            <li className="header__phonenum">Mobile: 480-242-4551</li>
+            <li className="header__phonenum">Home: 480-590-2595</li>
 
             <li className="header__faxdetails">
               <span className="fax">Fax: </span>
@@ -132,6 +132,9 @@ function Header() {
             </li>
           </ul>
         </div>
+
+
+        <div>
         <div className="header__connect">
           <span>Stay Connected</span>
           <Link
@@ -156,6 +159,11 @@ function Header() {
             <Instagram stroke="#7b57b0" />
           </Link>
         </div>
+        <p className="slogan__new">New management, New look, Better Services</p>
+        </div>
+
+
+
       </div>
       <nav class="header__nav">
         <ul class="header__list">

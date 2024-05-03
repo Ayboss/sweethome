@@ -140,6 +140,12 @@ body {
   color: #000;
 }
 
+  .slogan__new {
+  margin-right: 7px;
+  font-size: 16px;
+  color: #7b57b0;
+}
+
 .header__socialitem {
   width: 35px;
   height: 35px;
@@ -434,6 +440,7 @@ body {
 }
 .appointment__btn:hover {
   background-color: #000;
+  color: #fff;
 }
 /* CONTACT STYLES */
 .contact {
