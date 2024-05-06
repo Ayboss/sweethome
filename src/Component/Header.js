@@ -159,7 +159,7 @@ function Header() {
             <Instagram stroke="#7b57b0" />
           </Link>
         </div>
-        <p className="slogan__new">New management, New look, Better Services</p>
+        <p className="slogan__new">New management | <span> New look </span>| Better Services</p>
         </div>
 
 
