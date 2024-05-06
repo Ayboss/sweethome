@@ -149,6 +149,9 @@ body {
 .slogan__new span{
   font-weight: 800
 }
+.slogan__new #vertical-line{
+  font-size: 30px;
+}
 
 .header__socialitem {
   width: 35px;
