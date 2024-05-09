@@ -36,7 +36,7 @@ export default function Home() {
           <img src="./images/nurse.png" class="appointment__image" />
           <div class="appointment__info">
             <h2 class="appointment__heading playfair">
-              Make An Appointment With Us Today
+              Make An <br /> Appointment With <br /> Us Today
             </h2>
             <p class="appointment__text">
               Our caregiving home is designed to provide a comfortable and
@@ -52,7 +52,7 @@ export default function Home() {
         {/* <!-- CONTACT --> */}
         <section class="contact">
           <div class="contact__info">
-            <h2 class="contact__heading playfair">Get In Touch With Us</h2>
+            <h2 class="contact__heading playfair">Get In Touch <br /> With Us</h2>
             <p class="contact__text">
               Your comfort, happiness, and peace of mind are our top priorities.
               Let us help you embark on this next chapter of your life with

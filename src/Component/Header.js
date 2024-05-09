@@ -77,7 +77,7 @@ function Header() {
       )}
       <div className="header__mobile">
         <p className="slogan__new">
-          New management | <span> New look </span>| Better Services
+           <span> New look </span>| Better Services | New management 
         </p>
         <p className="header__mobile__phone">
           <span className="header__mobile__phonenumber">480-242-4551</span>
@@ -162,7 +162,7 @@ function Header() {
             </Link>
           </div>
           <p className="slogan__new">
-            New management | <span> New look </span>| Better Services
+          <span> New look </span> | Better Services | New management 
           </p>
         </div>
       </div>

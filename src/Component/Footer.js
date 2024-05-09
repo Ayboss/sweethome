@@ -18,7 +18,7 @@ function Footer() {
     <footer class="footer">
       <div className="footer__flex">
         <div className="footer__first">
-        <h3 className="footer__heading playfair">New management,<br /> New look,<br /> Better Services.</h3>
+        <h3 className="footer__heading playfair"> New look,<br />Better Services, <br /> New management.<br /> </h3>
 
           <p className="footer__text">
             Our team here at <b> Sweet Home Assisted Living</b> is here to
