@@ -951,8 +951,8 @@ h3.footer__heading {
   }
 }
 @media (max-width: 692px) {
-  .slogan__new {
-    font-size: 12px;
+  .slogan__new, .slogan__new span {
+    font-size: 8px;
     margin: 0px;
   }
   .services__grid {
