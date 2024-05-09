@@ -76,6 +76,9 @@ function Header() {
         </div>
       )}
       <div className="header__mobile">
+        <p className="slogan__new">
+          New management | <span> New look </span>| Better Services
+        </p>
         <p className="header__mobile__phone">
           <span className="header__mobile__phonenumber">480-242-4551</span>
         </p>
@@ -133,37 +136,35 @@ function Header() {
           </ul>
         </div>
 
-
         <div>
-        <div className="header__connect">
-          <span>Stay Connected</span>
-          <Link
-            href={"https://www.facebook.com/ola.olami.39/"}
-            className="header__socialitem"
-            target="_blank"
-          >
-            <Facebook />
-          </Link>
-          <Link
-            href={"https://twitter.com/shaliving1"}
-            className="header__socialitem"
-            target="_blank"
-          >
-            <Twitter />
-          </Link>
-          <Link
-            href={"https://www.instagram.com/shaliving1/"}
-            className="header__socialitem"
-            target="_blank"
-          >
-            <Instagram stroke="#7b57b0" />
-          </Link>
+          <div className="header__connect">
+            <span>Stay Connected</span>
+            <Link
+              href={"https://www.facebook.com/ola.olami.39/"}
+              className="header__socialitem"
+              target="_blank"
+            >
+              <Facebook />
+            </Link>
+            <Link
+              href={"https://twitter.com/shaliving1"}
+              className="header__socialitem"
+              target="_blank"
+            >
+              <Twitter />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/shaliving1/"}
+              className="header__socialitem"
+              target="_blank"
+            >
+              <Instagram stroke="#7b57b0" />
+            </Link>
+          </div>
+          <p className="slogan__new">
+            New management | <span> New look </span>| Better Services
+          </p>
         </div>
-        <p className="slogan__new">New management | <span> New look </span>| Better Services</p>
-        </div>
-
-
-
       </div>
       <nav class="header__nav">
         <ul class="header__list">

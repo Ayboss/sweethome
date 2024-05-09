@@ -140,16 +140,21 @@ body {
   color: #000;
 }
 
-  .slogan__new {
+.slogan__new {
   margin-right: 7px;
   font-size: 17px;
   color: #7b57b0;
+  animation-name: blink;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-.slogan__new span{
-  font-weight: 800
+.slogan__new span {
+  font-weight: 800;
 }
-.slogan__new #vertical-line{
+.slogan__new #vertical-line {
   font-size: 30px;
 }
 
@@ -941,6 +946,10 @@ h3.footer__heading {
   }
 }
 @media (max-width: 692px) {
+  .slogan__new {
+    font-size: 12px;
+    margin: 0px;
+  }
   .services__grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1103,3 +1112,11 @@ h3.footer__heading {
   }
 }
 /* 1013 */
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
