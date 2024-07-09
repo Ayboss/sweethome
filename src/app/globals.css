@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-a[href^=tel]{
+a[href^="tel"] {
   text-decoration: none;
 }
 
@@ -506,8 +506,8 @@ body {
 }
 .footer__flex {
   display: flex;
-  gap: 80px;
-  margin: 0 70px;
+  gap: 70px;
+  margin: 0 50px;
   justify-content: space-between;
 }
 .footer__flex > * {
@@ -586,6 +586,11 @@ h3.footer__heading {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
+}
+.footer__newimg {
+  width: 300px;
+  object-fit: contain;
+  height: 300px;
 }
 .footer__socialimg {
 }
@@ -878,6 +883,11 @@ h3.footer__heading {
     gap: 30px;
     margin: 0;
   }
+  .footer__newimg {
+    width: 200px;
+    object-fit: contain;
+    height: 200px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -951,7 +961,8 @@ h3.footer__heading {
   }
 }
 @media (max-width: 692px) {
-  .slogan__new, .slogan__new span {
+  .slogan__new,
+  .slogan__new span {
     font-size: 8px;
     margin: 0px;
   }
