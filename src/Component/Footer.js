@@ -110,8 +110,14 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <Image src={footerimg} alt="footer" className="footer__newimg" />
       </div>
+      <Link
+                  href={"https://assistedlivingmagazine.com/nursing-home/sweet-home-assisted-living-al/"}
+                  target="_blank"
+                >
+                  <Image src={footerimg} alt="footer" className="footer__newimg" />
+                </Link>
+       
       <hr className="footer__hr" />
       <p className="footer__copy">
         Copyright &#169; 2024 Sweet Home Assisted Living, LLC. All rights
